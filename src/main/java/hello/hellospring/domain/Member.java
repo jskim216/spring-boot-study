@@ -1,8 +1,14 @@
 package hello.hellospring.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)         // DB 가 PK 를 생성
     private Long id;
+
+    @Column(name = "name")          //  DB 의 컬럼과 매핑
     private String Name;
 
     public Long getId() {
