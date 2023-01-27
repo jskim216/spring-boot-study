@@ -9,7 +9,7 @@ public class Member {
     private Long id;
 
     @Column(name = "name")          //  DB 의 컬럼과 매핑
-    private String Name;
+    private String name;
 
     public Long getId() {
         return id;
@@ -20,10 +20,10 @@ public class Member {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 }
